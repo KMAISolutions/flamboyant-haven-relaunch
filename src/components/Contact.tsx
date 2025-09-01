@@ -54,15 +54,22 @@ const Contact = () => {
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="font-semibold text-foreground">Phone</p>
-                    <p className="text-muted-foreground">+27 (0)XX XXX XXXX</p>
+                    <p className="font-semibold text-foreground">Office</p>
+                    <p className="text-muted-foreground">+27 76 259 7111</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-primary" />
+                  <div>
+                    <p className="font-semibold text-foreground">David (Manager)</p>
+                    <p className="text-muted-foreground">+27 79 147 6147</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MessageCircle className="w-5 h-5 text-green-600" />
                   <div>
                     <p className="font-semibold text-foreground">WhatsApp</p>
-                    <p className="text-muted-foreground">+27 (0)XX XXX XXXX</p>
+                    <p className="text-muted-foreground">+27 79 147 6147</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
