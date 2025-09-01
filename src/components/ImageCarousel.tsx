@@ -25,10 +25,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, title, subtitle }
   };
 
   return (
-    <Card className="w-full max-w-2xl mx-auto">
+    <Card className="w-full max-w-2xl mx-auto shadow-soft hover:shadow-hover transition-smooth">
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        {subtitle && <CardDescription className="text-base">{subtitle}</CardDescription>}
+        <CardTitle className="text-xl">{title}</CardTitle>
+        {subtitle && <CardDescription className="text-base text-muted-foreground">{subtitle}</CardDescription>}
       </CardHeader>
       <CardContent>
         <div className="relative overflow-hidden rounded-lg bg-muted">
@@ -44,8 +44,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, title, subtitle }
                 <Button
                   variant="outline"
                   size="icon"
-                  className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-background/90 hover:bg-background shadow-hover"
+                  className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-background/90 hover:bg-background shadow-hover border-border/50"
                   onClick={prevSlide}
+                  aria-label="Previous image"
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </Button>
@@ -53,8 +54,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, title, subtitle }
                 <Button
                   variant="outline"
                   size="icon"
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-background/90 hover:bg-background shadow-hover"
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-background/90 hover:bg-background shadow-hover border-border/50"
                   onClick={nextSlide}
+                  aria-label="Next image"
                 >
                   <ChevronRight className="h-4 w-4" />
                 </Button>
